@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using MaterialSkin;
 using MaterialSkin.Controls;
 using MaterialSkin.Animations;
+using ChatApp;
 
 namespace MyChatApp
 {
@@ -66,6 +67,13 @@ namespace MyChatApp
         private void materialRaisedButton5_Click(object sender, EventArgs e)
         {
             richTextBox1.Text += "\n[Server] Chat Room Joined!";
+        }
+
+        private void LoginButton_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            form.Show();
+            this.Close();
         }
     }
 }
